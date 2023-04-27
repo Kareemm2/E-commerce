@@ -10,7 +10,7 @@ function valuetext(value) {
 export const Product = () => {
     return (
         <>
-            <div className='container'>
+            <div className='container product'>
                 <div className="main">
                     <div className="img">
                         <img src={require('../assets/9.png')} alt="img" />
