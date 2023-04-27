@@ -1,0 +1,123 @@
+:root{
+    --primary: #F3F7FA;
+    --white: #fff;
+    --black: #333;
+    --text-color: #999999;
+    --blue: #4169e1;
+}
+
+.main{
+    width: 80%;
+    height: 80%;
+    background-color: var(--primary);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.14);
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+}
+.main .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    height: 100%;
+    width: 40%;
+}
+.main .img img{
+    width: 300px;
+}
+.main .about{
+    height: 100%;
+    width: 60%;
+    padding: 2.5%;
+    position: relative;
+}
+.main .about h1{
+    font-family: 'Changa', sans-serif;
+}
+.main .about p{
+    margin: 15px 0;
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0.2px;
+    color: var(--text-color);
+    font-family: 'Changa', sans-serif;
+}
+.main .about .colors{
+    margin: 15px 0;
+    font-family: 'Changa', sans-serif;
+}
+.main .about .colors h3{
+    font-family: inherit;
+}
+.main .about .colors ul li{
+    list-style: none;
+    display: inline-block;
+}
+.main .about .colors ul li div{
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    margin-right: 15px;
+    margin-top: 10px;
+    border-radius: 50%;
+    cursor: w-resize;
+}
+.main .about .colors ul li:nth-child(2) div{
+    background-color: #4169e1;
+}
+.main .about .colors ul li:nth-child(3) div{
+    background-color: yellowgreen;
+}
+.main .about .colors ul li:nth-child(4) div{
+    background-color: #333;
+}
+.main .about .colors ul li:nth-child(5) div{
+    background-color: #ebebeb;
+}
+.slider{
+    text-align: start;
+    margin: 15px 0;
+}
+.slider h3{
+    font-family: 'Changa', sans-serif;
+}
+.main .about button{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 7%;
+    padding: 10px 35px;
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+@media (min-width: 200px) and (max-width: 1100px) {
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    .main{
+
+        flex-direction: column;
+    }
+    .main .img{
+        width: 100%;
+        position: relative;
+        height: 1000px;
+    }
+    .main .img img{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .main .about{
+        width: 100%;
+        height: 520px;
+    }
+}

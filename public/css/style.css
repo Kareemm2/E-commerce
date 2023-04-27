@@ -1,0 +1,235 @@
+:root{
+    --primary: #F3F7FA;
+    --white: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--primary);
+
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+/*
+-----------------------------------
+            NAVBAR
+-----------------------------------
+*/
+.show-when-desktop{
+    width: 100%;
+    height: 50px;
+    padding: 0 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.show-when-desktop ul li{
+    display: inline-block;
+    margin: 0 15px;
+    list-style: none;
+}
+.show-when-desktop ul li .mainLink{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.show-when-desktop .login-btn{
+    padding: 7px 21px;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 3px;
+    background-color: royalblue;
+}
+.show-when-mobile{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    padding: 0 4%;
+    display: none;
+}
+.toggle{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.show-when-mobile ion-icon{
+    font-size: 1.95em;
+    cursor: pointer;
+}
+.menu{
+    display: none;
+}
+
+/* ------------- sliding menu ------------------ */
+.hidden {
+    height: 0;
+    width: 100%;
+    background-color: #333;
+}
+.visible {
+    width: 100%;
+    height: 300px;
+    display: block;
+    background-color: #333;
+    position: unset;
+}
+/*
+-----------------------------------
+            NAVBAR
+-----------------------------------
+*/
+.header{
+    width: 100%;
+    height: 500px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.10);
+}
+.header .text{
+    color: #333;
+    width: 50%;
+}
+.header .text h1{
+    font-size: 40px;
+    margin: 10px 0;
+    color: inherit;
+}
+.header .text p{
+    font-size: 15px;
+    font-weight: 500;
+    width: 90%;
+    letter-spacing: 0.2px;
+    line-height: 21px;
+    margin: 10px 0;
+    color: inherit;
+}
+.header .text input{
+    margin: 10px 10px 10px 0px;
+    border: none;
+    background-color: #333;
+    color: var(--white);
+    padding: 7px 21px;
+    font-weight: bold;
+}
+.header .text a{
+    color: #333;
+    font-size: 15px;
+}
+.products{
+    width: 100%;
+    height: fit-content;
+}
+.products h1{
+    text-align: center;
+    margin: 40px 0;
+}
+.products .cards-parent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 3%;
+}
+.products .categorys{
+    width: 70%;
+    margin: 4% 15%;
+    display: flex;
+    justify-content: center;
+}
+.products .categorys button{
+    background-color: royalblue;
+    color: var(--white);
+    cursor: pointer;
+}
+.products .cards-parent .card{
+    width: 300px;
+    height: 360px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    margin: 2% 0;
+    background-color: var(--primary);
+    position: relative;
+}
+
+.products .cards-parent .card .img{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+}
+.products .cards-parent .card .img img{
+    width: 50%;
+}
+.products .cards-parent .card:nth-child(8) .img img{
+    width: 70%;
+}
+.products .cards-parent .card h4{
+    font-size: 20px;
+    margin: 3% 5%;
+    font-family: 'Changa', sans-serif;
+}
+.products .cards-parent .card h5{
+    font-size: 15px;
+    margin: 3% 5%;
+    font-family: 'Changa', sans-serif;
+}
+.products .cards-parent .card h6{
+    font-size: 15px;
+    margin: 3% 5%;
+    font-family: 'Changa', sans-serif;
+}
+
+.products .cards-parent .card .foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3% 5%;
+    height: 30px;
+}
+.products .cards-parent .card a{
+    padding: 2px 32px;
+    background-color: royalblue;
+    text-decoration: none;
+    border-radius: 4px;
+    color: var(--white);
+    font-weight: bold;
+    font-family: 'Changa', sans-serif;
+}
+.Pagination{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2% 0;
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: silver;
+    font-size: 15px;
+}
