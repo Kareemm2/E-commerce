@@ -110,15 +110,11 @@
     .main .img{
         width: 100%;
         position: relative;
-        height: 400px;
+        height: 500px;
     }
-    .main .img img{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
+
     .main .about{
         width: 100%;
-        height: 520px;
+        height: 60px;
     }
 }
