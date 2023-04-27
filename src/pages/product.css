@@ -1,26 +1,28 @@
-:root{
+:root {
     --primary: #F3F7FA;
     --white: #fff;
     --black: #333;
     --text-color: #999999;
     --blue: #4169e1;
 }
-.productContainer{
+
+.productContainer {
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.main{
+
+.main {
     width: 80%;
     height: 80%;
-    background-color: var(--primary);
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.14);
     display: flex;
-
+    background-color: var(--primary);
 }
-.main .img{
+
+.main .img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,19 +30,23 @@
     height: 100%;
     width: 40%;
 }
-.main .img img{
+
+.main .img img {
     width: 300px;
 }
-.main .about{
+
+.main .about {
     height: 100%;
     width: 60%;
     padding: 2.5%;
     position: relative;
 }
-.main .about h1{
+
+.main .about h1 {
     font-family: 'Changa', sans-serif;
 }
-.main .about p{
+
+.main .about p {
     margin: 15px 0;
     font-weight: 400;
     font-size: 17px;
@@ -48,18 +54,22 @@
     color: var(--text-color);
     font-family: 'Changa', sans-serif;
 }
-.main .about .colors{
+
+.main .about .colors {
     margin: 15px 0;
     font-family: 'Changa', sans-serif;
 }
-.main .about .colors h3{
+
+.main .about .colors h3 {
     font-family: inherit;
 }
-.main .about .colors ul li{
+
+.main .about .colors ul li {
     list-style: none;
     display: inline-block;
 }
-.main .about .colors ul li div{
+
+.main .about .colors ul li div {
     height: 25px;
     width: 25px;
     background-color: red;
@@ -68,26 +78,33 @@
     border-radius: 50%;
     cursor: w-resize;
 }
-.main .about .colors ul li:nth-child(2) div{
+
+.main .about .colors ul li:nth-child(2) div {
     background-color: #4169e1;
 }
-.main .about .colors ul li:nth-child(3) div{
+
+.main .about .colors ul li:nth-child(3) div {
     background-color: yellowgreen;
 }
-.main .about .colors ul li:nth-child(4) div{
+
+.main .about .colors ul li:nth-child(4) div {
     background-color: #333;
 }
-.main .about .colors ul li:nth-child(5) div{
+
+.main .about .colors ul li:nth-child(5) div {
     background-color: #ebebeb;
 }
-.slider{
+
+.slider {
     text-align: start;
     margin: 15px 0;
 }
-.slider h3{
+
+.slider h3 {
     font-family: 'Changa', sans-serif;
 }
-.main .about button{
+
+.main .about button {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -100,21 +117,26 @@
     border-radius: 4px;
     cursor: pointer;
 }
+
 @media (min-width: 200px) and (max-width: 1100px) {
 
-    .main{
+    .main {
         width: 100%;
         height: 100%;
-        flex-direction: column;
+        display: unset;
     }
-    .main .img{
+
+    .main .img {
         width: 100%;
-        position: relative;
+        height: 300px;
+    }
+
+    .main .about {
+        width: 100%;
         height: 500px;
     }
 
-    .main .about{
-        width: 100%;
-        height: 60px;
+    .main .about button {
+        bottom: 3%;
     }
 }

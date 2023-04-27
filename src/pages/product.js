@@ -11,7 +11,6 @@ export const Product = () => {
     return (
         <>
             <div className='productContainer'>
-                <div className="main">
                     <div className="main">
                         <div className="img">
                             <img src={require('../assets/9.png')} alt="img" />
@@ -50,7 +49,6 @@ export const Product = () => {
                         </div>
                     </div>
                 </div>
-            </div>
         </>
     );
 }
