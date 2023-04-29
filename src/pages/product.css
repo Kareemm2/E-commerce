@@ -28,18 +28,18 @@
     width: 300px;
 }
 
-.main .about {
+.main  {
     height: 100%;
     width: 60%;
     padding: 2.5%;
     position: relative;
 }
 
-.main .about h1 {
+.main  h1 {
     font-family: 'Changa', sans-serif;
 }
 
-.main .about p {
+.main  p {
     margin: 15px 0;
     font-weight: 400;
     font-size: 17px;
@@ -48,21 +48,21 @@
     font-family: 'Changa', sans-serif;
 }
 
-.main .about .colors {
+.main  .colors {
     margin: 15px 0;
     font-family: 'Changa', sans-serif;
 }
 
-.main .about .colors h3 {
+.main  .colors h3 {
     font-family: inherit;
 }
 
-.main .about .colors ul li {
+.main  .colors ul li {
     list-style: none;
     display: inline-block;
 }
 
-.main .about .colors ul li div {
+.main  .colors ul li div {
     height: 25px;
     width: 25px;
     background-color: red;
@@ -72,19 +72,19 @@
     cursor: w-resize;
 }
 
-.main .about .colors ul li:nth-child(2) div {
+.main  .colors ul li:nth-child(2) div {
     background-color: #4169e1;
 }
 
-.main .about .colors ul li:nth-child(3) div {
+.main  .colors ul li:nth-child(3) div {
     background-color: yellowgreen;
 }
 
-.main .about .colors ul li:nth-child(4) div {
+.main  .colors ul li:nth-child(4) div {
     background-color: #333;
 }
 
-.main .about .colors ul li:nth-child(5) div {
+.main  .colors ul li:nth-child(5) div {
     background-color: #ebebeb;
 }
 
@@ -97,7 +97,7 @@
     font-family: 'Changa', sans-serif;
 }
 
-.main .about button {
+.main  button {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -125,12 +125,7 @@
     .main .img img{
         width: 200px;
     }
-    .main .about {
-        width: 100%;
-        height: 550px;
-        
-    }
-    .main .about button{
+    .main button{
         bottom: 7%;
     }
 }

@@ -15,7 +15,6 @@ export const Product = () => {
                     <div className="img">
                         <img src={require('../assets/9.png')} alt="img" />
                     </div>
-                    <div className="about">
                         <h1>Winter jacket</h1>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quam, facilis quos repellendus ab earum unde aspernatur nulla. Aliquam odit vel exercitationem placeat, sunt veritatis cum culpa impedit tenetur vero.
@@ -48,7 +47,6 @@ export const Product = () => {
                         <button type="submit">BUY NOW</button>
                     </div>
                 </div>
-            </div>
         </>
     );
 }
