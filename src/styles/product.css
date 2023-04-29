@@ -6,13 +6,14 @@
     --blue: #4169e1;
     --second-primary: #D2E9E3;
 }
-
 .main {
     width: 80%;
     height: 80%;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.14);
     display: flex;
     background-color: var(--primary);
+    padding: 2.5%;
+    position: relative;
 }
 
 .main .img {
@@ -28,12 +29,6 @@
     width: 300px;
 }
 
-.main  {
-    height: 100%;
-    width: 60%;
-    padding: 2.5%;
-    position: relative;
-}
 
 .main  h1 {
     font-family: 'Changa', sans-serif;
@@ -126,6 +121,10 @@
         width: 200px;
     }
     .main button{
-        bottom: 7%;
+        bottom: 0%;
     }
 }
+
+
+
+
