@@ -6,10 +6,7 @@
     --blue: #4169e1;
     --second-primary: #D2E9E3;
 }
-.test{
-    width: 100%;
-    height: 100%;
-}
+
 .main {
     width: 80%;
     height: 80%;
@@ -22,7 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--white);
+    background-color: var(--blue);
     height: 100%;
     width: 40%;
 }
@@ -125,7 +122,10 @@
     }
     .main .img{
         width: 100%;
-        height: 400px;
+        height: 300px;
+    }
+    .main .img img{
+        width: 200px;
     }
     .main .about {
         width: 100%;
