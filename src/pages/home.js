@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
-import '../styles/Home.css'
+import '../styles/Home.css';
 
 const Home = () => {
     const dataShow = database.map((item) => <Cards img={item.img} title={item.title} type={item.type} price={item.price} />)
