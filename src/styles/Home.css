@@ -541,6 +541,9 @@ body {
         .foot section .text{
             width: 100%;
         }
+        .foot section .text .main-title{
+            font-size: 20px;
+        }
 
     }
 
