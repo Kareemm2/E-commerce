@@ -1,8 +1,15 @@
 import Head from 'next/head';
 import styles from '@/styles/Home.module.css';
 import Nav from '../components/Nav';
+import Cards from "../components/cards";
+import { database } from "../src/database";
+import Button from '@mui/material/Button';
+import ButtonGroup from '@mui/material/ButtonGroup';
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
 
 export default function Home() {
+    const dataShow = database.map((item) => <Cards img={item.img} title={item.title} type={item.type} price={item.price} />)
     return (
         <>
             <Head>
@@ -14,32 +21,59 @@ export default function Home() {
             <main className={styles.main}>
                 <Nav />
                 <div className={styles.header}>
-                <div className={styles.head}>
-                    <div className={styles.text}>
-                        <h1>E-commerce market</h1>
-                        <p>Selling online has become a popular way for businesses to reach a wider audience and increase their sales. With the rise of e-commerce platforms, businesses can easily set up an online store and sell their products or</p>
-                        <input type="button" value="Learn more" /> <a href='#w'>Start selling</a>
+                    <div className={styles.head}>
+                        <div className={styles.text}>
+                            <h1>E-commerce market</h1>
+                            <p>Selling online has become a popular way for businesses to reach a wider audience and increase their sales. With the rise of e-commerce platforms, businesses can easily set up an online store and sell their products or</p>
+                            <input type="button" value="Learn more" /> <a href='#w'>Start selling</a>
+                        </div>
+                        <img src="http://127.0.0.1:5500/assets/0.png" alt="" />
                     </div>
-                    <img src="http://127.0.0.1:5500/assets/0.png" alt="" />
+                    <div className={styles.foot}>
+                        <section>
+                            <div className={styles.text}>
+                                <h2 className={styles.mainTitle}>Cheap&Luxury <span>furnishings</span></h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In undemolestias dolores perferendis laborum quia!</p>
+                                <a to="#w">Learn more</a>
+                            </div>
+                            <img src="http://127.0.0.1:5500/assets/11.png" alt="" />
+                        </section>
+                        <section>
+                            <img src="http://127.0.0.1:5500/assets/10.png" alt="" />
+                            <div className={styles.text}>
+                                <h2 className={styles.mainTitle}>Start selling your old <span>Things</span></h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In undemolestias dolores perferendis laborum quia!</p>
+                                <a to="#w">Learn more</a>
+                            </div>
+                        </section>
+                    </div>
                 </div>
-                <div className={styles.foot}>
-                    <section>
-                        <div className={styles.text}>
-                            <h2 className={styles.mainTitle}>Cheap&Luxury <span>furnishings</span></h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In undemolestias dolores perferendis laborum quia!</p>
-                            <a to="#w">Learn more</a>
-                        </div>
-                        <img src="http://127.0.0.1:5500/assets/11.png" alt="" />
-                    </section>
-                    <section>
-                        <img src="http://127.0.0.1:5500/assets/10.png" alt="" />
-                        <div className={styles.text}>
-                            <h2 className={styles.mainTitle}>Start selling your old <span>Things</span></h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In undemolestias dolores perferendis laborum quia!</p>
-                            <a to="#w">Learn more</a>
-                        </div>
-                    </section>
+                <div className={styles.products}>
+                <h1 className={styles.mainTitle}>
+                    All-products
+                </h1>
+                <div className={styles.categorys}>
+                    <ButtonGroup variant="contained" aria-label="outlined primary button group">
+                        <Button>clothes</Button>
+                        <Button>furnishings</Button>
+                        <Button>devices</Button>
+                        <Button>other</Button>
+                    </ButtonGroup>
+
                 </div>
+                <div className={styles.cardsParent}>
+                    {dataShow}
+                </div>
+                
+
+            </div>
+            <div className={styles.Pagination}>
+    <Stack spacing={2}>
+        <Pagination count={10} color="primary" />
+    </Stack>
+</div>
+            <div className={styles.footer}>
+                © 2023 E-commerce Inc. All rights reserved
             </div>
             </main>
         </>
